@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{% block title %}<!-- title goes here -->{% endblock %}</title>
+  <title>{% block title %}AK and Axa's Madlibs{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link
       href="https://bootswatch.com/5/minty/bootstrap.css"
@@ -17,8 +17,17 @@
   <div class="row vh-100">
     <div class="mx-auto my-auto">
       <main class="col w-100">
-        {% block content %}{% endblock %}
+        {% block content %}
+
+        <form action="/questions">
+            <button name="story_name" value="excited">Excited</button>
+            <button name="story_name" value="silly">Silly</button>
+        </form>
+
+
+        {% endblock %}
       </main>
+      </div>
     </div>
   </div>
 </html>
